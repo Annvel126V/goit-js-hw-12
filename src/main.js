@@ -10,12 +10,12 @@ import { createImages, showError, cleanGallery } from "./js/render-functions.js"
 
 const form = document.querySelector(".gallery-form");
 const input = document.querySelector(".input-for-gallery");
-const loader = document.querySelector(".loader");
+const loader = document.querySelector(".loading");
 const loadMoreBtn = document.querySelector(".btn-load-more");
 
 let currentPage = 1;
 const resultsPerPage = 15;
-let currentQuery = '';
+let currentQuery = "";
 
 form.addEventListener('submit', async (event) => {
     event.preventDefault();

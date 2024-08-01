@@ -17,6 +17,7 @@ export function showError(error) {
 
 
 export function createImages(data) {
+    const list = document.querySelector(".gallery-list");
     const lightbox = new SimpleLightbox('.gallery-list a', { 
       captions: true,
       captionType: 'attr',
@@ -24,8 +25,8 @@ export function createImages(data) {
       captionPosition: 'bottom',
       captionDelay: 250
      });
-    const list = document.querySelector(".gallery-list");
-  let images = data.hits.map((hit) =>
+    
+  const images = data.hits.map((hit) =>
     `<div class="image-frame">
   <a href="${hit.largeImageURL}">
   <img class="image" src="${hit.webformatURL}" alt="${hit.tags}" /></a>
