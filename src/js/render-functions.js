@@ -53,7 +53,7 @@ export function createImages(data) {
     lightbox.refresh();
 }
 
-export const clearGallery = () => {
+export const cleanGallery = () => {
   document.querySelector('.gallery-list').innerHTML = '';
 };
 

@@ -51,7 +51,7 @@ async function performSearch() {
         
         if (currentPage > 1) {
             const galleryHeightB = document.querySelector('.gallery-list').getBoundingClientRect().height;
-        createGallary(data);
+        createImages(data);
         const galleryHeightA = document.querySelector('.gallery-list').getBoundingClientRect().height;
         console.log(document.querySelector('.gallery-list').getBoundingClientRect())
         window.scrollBy({
