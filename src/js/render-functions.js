@@ -16,7 +16,7 @@ export function showError(error) {
 }
 
 
-export function createImages(data) {
+export function searchImages(data) {
     const lightbox = new SimpleLightbox('.gallery-list a', { 
       captions: true,
       captionType: 'attr',
