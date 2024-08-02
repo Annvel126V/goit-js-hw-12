@@ -116,6 +116,26 @@ section {
   gap: 10px;
   justify-content: center;
 }
+.btn-load-more{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-width: 125px;
+    margin: 32px auto;
+    border-radius: 8px;
+    border-radius: 8px;
+      padding: 8px 16px;
+      width: 125px;
+      height: 40px;
+      border: none;
+      background: #6c8cff;
+      color: #FFF;
+  }
+  
+   
+      
+    
 
 .loader {
   display: block;
@@ -169,6 +189,6 @@ section {
   }
 }
 
-.hiden {
+.hidden {
   display: none;
 }

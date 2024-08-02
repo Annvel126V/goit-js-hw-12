@@ -10,7 +10,7 @@ import { createImages, showError, cleanGallery } from "./js/render-functions.js"
 
 const form = document.querySelector(".gallery-form");
 const input = document.querySelector(".input-for-gallery");
-const loader = document.querySelector(".loading");
+const loader = document.querySelector(".loader");
 const loadMoreBtn = document.querySelector(".btn-load-more");
 
 let currentPage = 1;
