@@ -62,17 +62,20 @@ async function performSearch() {
             createImages(data);
         }
         if (data.hits.length < resultsPerPage) { 
-        loadMoreBtn.classList.add('hidden'); 
+          loadMoreBtn.classList.add('hidden');
+        return iziToast.info({
+                    position: "topRight",
+                    message: "We're sorry, but you've reached the end of search results."
+                });  
         } else {
-            if (data.totalHits > ( currentPage * resultsPerPage)) {
+          if (data.totalHits > (currentPage * resultsPerPage)) {
+              
                 loadMoreBtn.classList.remove('hidden'); 
+                
             } else {
                 
                     loadMoreBtn.classList.add('hidden'); 
-                    return iziToast.info({
-                    position: "topRight",
-                    message: "We're sorry, but you've reached the end of search results."
-                });
+                    
             }
         }
     }
